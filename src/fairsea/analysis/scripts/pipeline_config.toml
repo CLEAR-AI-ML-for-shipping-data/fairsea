@@ -1,0 +1,17 @@
+title = "FAIRSEA pipeline"
+
+[global]
+stages = [
+  "features",
+  "compression",
+  "dtw",
+  "clustering",
+  "plotting"
+]
+bbox = [9.0, 56.0, 13.5, 60.0]  # Swedish West Coast
+output_suffix = "timestamp"
+output_folder = "../output/"
+
+timestamp_col = "Timestamp_datetime"
+voyage_id_col = "voyage_id"
+

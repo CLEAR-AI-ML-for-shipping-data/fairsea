@@ -1,0 +1,43 @@
+# FAIRSEA pipeline configuration file
+
+[global]
+stages = [
+  "features",
+  "compression",
+  "dtw",
+  "clustering",
+  "plotting"
+]
+
+# Bounding box for the data, in [West, South, East, North] (in degrees)
+bbox = [9.0, 56.0, 13.5, 60.0]  # Swedish West Coast
+
+# Output_suffix is the suffix that will be attached to the output files.
+# Use "timestamp" to get the timestamp in the formay yyyymmdd_hhmm.
+# This timestamp is from the moment the script is started, so it will be identical
+# for all output files from one run.
+# Use any other value between quotes to use that suffix instead.
+output_suffix = "timestamp"
+
+# Location of the data files
+ais_data_path = "data/ais2018_chemical_tanker.csv"
+meta_data_path = "data/imo_km_oil.csv"
+
+# Location of the output files
+output_folder = "output/"
+voyages_filename = "default" 
+compressed_filename = "default"
+matrix_filename = "default"
+map_filename = "default"
+
+# Compression hyperparameter, should be positive
+compression_eps = 0.003
+# Clustering hyperparameter, should be positive
+clustering_eps = 13.0
+
+# Location of the data about territorial zones
+[global.eez_files]
+internal = "data/eco_zones/eez_internal_waters_v3.gpkg"
+territorial = "data/eco_zones/eez_12nm_v3.gpkg"
+contiguous = "data/eco_zones/eez_24nm_v3.gpkg"
+eez = "data/eco_zones/eez_v11.gpkg"

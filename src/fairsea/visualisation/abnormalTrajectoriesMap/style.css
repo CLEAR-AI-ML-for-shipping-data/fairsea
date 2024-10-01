@@ -1,0 +1,88 @@
+.maplegend {
+	position: absolute;
+    z-index:9999;
+    border-radius:4px;
+    background: rgba(28, 25, 56, 0.25);
+    /*box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);*/
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur(4px);
+    border: 2px solid rgba(215, 164, 93, 0.2);
+    padding: 10px;
+    font-size: 90%;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+}
+
+.maplegend .legend-title {
+	color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 80%;
+}
+.maplegend .legend-scale ul {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+.maplegend .legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+.maplegend ul.legend-labels li span {
+	display: block;
+	float: left;
+	height: 16px;
+	width: 30px;
+	margin-right: 5px;
+	margin-left: 0;
+	border: 1px solid #999;
+}
+.maplegend .legend-source {
+	font-size: 80%;
+	color: #777;
+	clear: both;
+}
+
+svg#legend {
+	z-index:9999;
+	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 2px solid rgba(215, 164, 93, 0.2);
+    fill: white;
+    height: 44px;
+    /*position: absolute;
+    right: 10px;
+    top: 10px;*/
+}
+
+#infolegend {
+    width: 220px;
+    height: 130px;
+    left: auto;
+    bottom: auto;
+    top: 64px;
+    right: 10px;
+}
+
+#voyid {
+    display: inline-block;
+    color: #FFD300;
+}
+
+#voytime, #voystarttime, #voyendtime {
+    display: inline-block;
+    color: #FFD300;
+}
+
+.voydeselected {
+    display: none;
+}

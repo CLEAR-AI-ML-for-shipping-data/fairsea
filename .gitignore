@@ -1,0 +1,12 @@
+# altair json data transformer
+visualisation/py/altair-data-*.json
+
+data/*
+src/fairsea/analysis/output/*
+
+.ipynb_checkpoints
+__pycache__
+.DS_store
+
+**/*.pkl
+**/*.html
